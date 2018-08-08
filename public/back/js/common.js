@@ -99,6 +99,22 @@ $(function(){
       },1000);
     })
 
+    //侧边栏隐藏切换
+    $('.icon-menu').click(function() {
+      // alert();
+      $('.lt-aside').toggleClass('hide-menu');
+      $('.lt-main').toggleClass('hide-menu');
+      $('.lt-main .head-menu').toggleClass('hide-menu');
+    })
 
+    //导航栏点击事件
+    $('.category').click(function(){
+      $('.category').next().slideToggle();
+    })
+
+    //模态框
+    $('.icon-logout').click(function(){
+      $('#myModal').modal('show');
+    })
 });
 

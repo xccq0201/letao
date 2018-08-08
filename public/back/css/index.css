@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+.lt-aside {
+  background-color: #222D32;
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: left 1s;
+}
+.lt-aside.hide-menu{
+  left: -180px;
+}
+
+.lt-aside .brand {
+  width: 100%;
+  height: 50px;
+  background-color: #367FA9;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  
+}
+.lt-aside .user {
+  padding-top: 30px;
+  height: 180px;
+}
+
+.lt-aside .user img {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.lt-aside .user p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.lt-aside .nav {
+  width: 180px;
+}
+.lt-aside .nav a {
+  padding-left: 50px;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  height: 40px;
+  border-left: 3px solid transparent;
+  width: 180px;
+  line-height: 40px;
+}
+.lt-aside .nav .current {
+  border-left: 3px solid #367FA9;
+  
+}
+.lt-aside .nav .child a{
+  padding-left: 50px;
+  font-size: 14px;
+  
+}
+.lt-main {
+  height: 100%;
+  background-color: pink;
+  padding-top: 70px;
+  padding-left: 180px;
+  width: 100%;
+  transition: padding-left 1s;
+}
+.lt-main.hide-menu {
+  padding-left: 0px;
+}
+
+.lt-main .head-menu {
+  padding-left: 180px;  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  transition: padding-left 1s;  
+}
+.lt-main .head-menu.hide-menu {
+  padding-left: 0px;  
+}
+.lt-main .head-menu a {
+  display: block;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height:50px;
+  text-align: center;
+}
+.lt-main .container-fluid {
+  background-color: pink;
+  /* padding-left:180px; */
+}
+
+
