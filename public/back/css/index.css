@@ -108,9 +108,16 @@ a:active{
   line-height:50px;
   text-align: center;
 }
-.lt-main .container-fluid {
-  /* background-color: pink; */
-  /* padding-left:180px; */
+
+table,
+table tr,
+table tr th {
+  text-align: center
 }
+
+.tm-50 {
+  margin-top: 50px;
+}
+
 
 
