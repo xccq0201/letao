@@ -77,7 +77,6 @@ a:active{
 }
 .lt-main {
   height: 100%;
-  background-color: pink;
   padding-top: 70px;
   padding-left: 180px;
   width: 100%;
@@ -110,7 +109,7 @@ a:active{
   text-align: center;
 }
 .lt-main .container-fluid {
-  background-color: pink;
+  /* background-color: pink; */
   /* padding-left:180px; */
 }
 

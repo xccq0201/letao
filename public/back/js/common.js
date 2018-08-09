@@ -1,4 +1,29 @@
 $(function(){
+ 
+
+
+  //验证是否登录,并且通过location.href判断是否是在login.html界面
+  if(location.href.indexOf("login.html") === -1) {
+    $.ajax({
+      type:"get",
+      url:"/employee/checkRootLogin",
+      dataType:"json",
+      success:function(info){
+        console.log(info);
+        if(info.success) {
+          console.log("已登录");
+        }
+
+        if(info.error === 400) {
+          location.href = "login.html"; 
+        }
+      }
+    })
+  }
+
+
+
+
    /*
    * 1. 进行表单校验配置
    *    校验要求:
@@ -116,5 +141,21 @@ $(function(){
     $('.icon-logout').click(function(){
       $('#myModal').modal('show');
     })
+
+    $(".layoutBtn").click(function(){
+      $.ajax({
+        type:"get",
+        url:"/employee/employeeLogout",
+        dataType:"json",
+        success:function(info){
+          if(info.success) {
+            location.href = "login.html";
+          }
+        }
+      })
+    })
+
+
+    
 });
 
